@@ -16,7 +16,7 @@ public class daily_sales_amount {
         OptionalDouble maxSale=sales.stream().mapToDouble((sale)->sale).max();
         System.out.println("the max sale is"+maxSale);
 
-        sales.stream().sorted(Collections.reverseOrder()).forEach((data)->System.out.println(data));
+        sales.stream().sorted().forEach((data)->System.out.println(data));
 
 
 

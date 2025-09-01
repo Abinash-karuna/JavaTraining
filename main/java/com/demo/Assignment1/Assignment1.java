@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class Assignment1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter the principal amount");
-//        Double principal_amount=sc.nextDouble();
-//        System.out.println("Enter the interest rate");
-//        Float interest_rate=sc.nextFloat();
-//        System.out.println("Enter the Tenure years");
-//        Integer Tenure_years=sc.nextInt();
-//        int months=Tenure_years*12;
-//        double monthly_rate=Tenure_years/1200.0;
-//        double EMI=(principal_amount * monthly_rate * Math.pow(1+monthly_rate,months))/(Math.pow(1+monthly_rate,months)-1);
-//        double total_pay=EMI*months;
-//        System.out.printf("Total Pay EMI: %.2f\n",EMI);
-//        System.out.printf("Total Pay EMI: %.2f",total_pay);
+        System.out.println("Enter the principal amount");
+        Double principal_amount=sc.nextDouble();
+        System.out.println("Enter the interest rate");
+        Float interest_rate=sc.nextFloat();
+        System.out.println("Enter the Tenure years");
+        Integer Tenure_years=sc.nextInt();
+        int months=Tenure_years*12;
+        double monthly_rate=Tenure_years/1200.0;
+        double EMI=(principal_amount * monthly_rate * Math.pow(1+monthly_rate,months))/(Math.pow(1+monthly_rate,months)-1);
+        double total_pay=EMI*months;
+        System.out.printf("Total Pay EMI: %.2f\n",EMI);
+        System.out.printf("Total Pay EMI: %.2f",total_pay);
 
         //-------- Assignment 3----------
 //        System.out.println("enter the price on flipkart: ");

@@ -5,14 +5,14 @@ import java.util.Set;
 
 public class Course {
     private String courseName;
-    private String courseCode;
+    private Integer courseId;
 
     public Course() {
     }
 
-    public Course(String courseName, String courseCode) {
+    public Course(String courseName, Integer courseId) {
         this.courseName = courseName;
-        this.courseCode = courseCode;
+        this.courseId = courseId;
     }
 
     public String getCourseName() {
@@ -23,30 +23,23 @@ public class Course {
         this.courseName = courseName;
     }
 
-    public String getCourseCode() {
-        return courseCode;
+    public Integer getCourseCode() {
+        return courseId;
     }
 
     public void setCourseCode(String courseCode) {
-        this.courseCode = courseCode;
+        this.courseId = courseId;
     }
 
     @Override
     public String toString() {
         return "Course{" +
                 "courseName='" + courseName + '\'' +
-                ", courseCode='" + courseCode + '\'' +
+                ", courseCode='" + courseId + '\'' +
                 '}';
     }
+    Course c1= new Course("math",101);
+    Course c2= new Course("Englis",102);
+    Course c3= new Course("Science",103);
 
-    public static class Hashset {
-       public static void main(String[] args) {
-           Set<Course> setCourse= new HashSet<>();
-           setCourse.add(new Course("Ak","111"));
-           setCourse.add(new Course("Bk","222"));
-           setCourse.add(new Course("Ck","333"));
-           setCourse.add(new Course("Ark","444"));
-
-       }
-    }
 }
